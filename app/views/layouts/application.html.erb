@@ -7,6 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+ <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <%= link_to root_path, class: 'navbar-brand' do %>
+      <i class="fa fa-male"></i>
+       <strong>Yatendra Pawar</strong>
+      <% end %>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <ul class="nav navbar-nav navbar-right">
+     
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+<ul class="nav nav-tabs">
+        <li role="presentation"><%= link_to "Home", root_path %></a></li>
+        <li role="presentation"><%= link_to "Profile", profile_path %></a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+        
+        
+      </ul>
 
 <%= yield %>
 
