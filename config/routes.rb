@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :contacts
+  get '/testimonials' => 'pages#testimonials'
+  get '/skills' => 'pages#skills'
+  get '/profile' => 'pages#profile'
+  get '/portfolio' => 'pages#portfolio'
+  get '/intro' => 'pages#intro'
+  get '/experince' => 'pages#experince'
+  get '/education' => 'pages#education'
   get '/profile'=>'pages#profile'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.

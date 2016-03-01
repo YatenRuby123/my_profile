@@ -24,20 +24,23 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-     
+          <li role="presentation"><%= link_to "Home", root_path %></li>
+          <li role="presentation"><%= link_to "Profile", profile_path %></li>
+          <li role="presentation"><%= link_to "Skills", skills_path %></li>
+          <li role="presentation"><%= link_to "Experience", experince_path %></li>
+          <li role="presentation"><%= link_to "Education", education_path %></li>
+          <li role="presentation"><%= link_to "Portfolio", portfolio_path %></li>
+          <li role="presentation"><%= link_to "Testimonials", testimonials_path %></li>
+          <li role="presentation"><%= link_to "Contact", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-<ul class="nav nav-tabs">
-        <li role="presentation"><%= link_to "Home", root_path %></a></li>
-        <li role="presentation"><%= link_to "Profile", profile_path %></a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-        
-        
-      </ul>
+ <%= image_tag("Yatendra.jpg", alt: "Yatendra Image", class: 'center') %>
+       <h1 class="text-center"><STRONG>YATENDRA PAWAR</STRONG></h1> 
 
 <%= yield %>
 
 </body>
+
 </html>

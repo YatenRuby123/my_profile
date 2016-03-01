@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+    <head></head>
+    <body>
+        <div class="row jumbotron">
+            <div class="well">
+               <h1 class="brown text-center">CONTACT</h1>
+               <div class="row jumbotron">
+    
+            <%= form_for @contact do |f| %>
+                <div class="form-group">
+                  <%= f.label :name %>
+                  <%= f.text_field :name, class: 'form-control' %>
+                </div>
+                
+                <div class="form-group">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, class: 'form-control' %>
+                </div>
+                
+                <div class="form-group">
+                  <%= f.label :comments %>
+                  <%= f.text_area :comments, class: 'form-control' %>
+                </div>
+                
+                <%= f.submit 'Submit', class: 'btn btn-primary' %>
+            <% end %>
+    </div>
+</div>
+   
+                
+                </body>
+                </html>
+
+
