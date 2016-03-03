@@ -30,20 +30,22 @@
           <li role="presentation"><%= link_to "Experience", experince_path %></li>
           <li role="presentation"><%= link_to "Education", education_path %></li>
           <li role="presentation"><%= link_to "Portfolio", portfolio_path %></li>
-          <li role="presentation"><%= link_to "Testimonials", testimonials_path %></li>
           <li role="presentation"><%= link_to "Contact", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
- <%= image_tag("Yatendra.jpg", alt: "Yatendra Image", class: 'center') %>
+ <%= image_tag("Yatendra.jpg", alt: "Yatendra Image", class: 'thumbnail center') %>
        <h1 class="text-center"><STRONG>YATENDRA PAWAR</STRONG></h1> 
 <div class="container">
     <% flash.each do |key, value| %>
       <%= content_tag :div, value, class: "alert alert-#{key}" %>
     <% end %>
+   
 <%= yield %>
 
+ </div>
+ <%= render 'layouts/footer' %>
 </body>
 
 </html>
