@@ -38,7 +38,10 @@
 </nav>
  <%= image_tag("Yatendra.jpg", alt: "Yatendra Image", class: 'center') %>
        <h1 class="text-center"><STRONG>YATENDRA PAWAR</STRONG></h1> 
-
+<div class="container">
+    <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "alert alert-#{key}" %>
+    <% end %>
 <%= yield %>
 
 </body>
